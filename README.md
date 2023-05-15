@@ -1,3 +1,4 @@
 "Molecular dynamics simulations of Boltorn polymer in aqueous solution using OpenMM software, conducted by Elsaid Mohamed under the supervision of Dr. Oskar Axelsson at SPAGO Nanomedical AB, Lund, Sweden. May 2023.
 
 We performed molecular dynamics simulations of Boltorn-4G in an aqueous solution. We created a polymer in PDB format to introduce it to OpenMM as a protein. We modified the Amber force field using Abalone and MOPAC software. We introduced the PDB file and the .xml force field to the OpenMM software using a Python script. We used the Matplotlib package and built-in commands in OpenMM to analyze the output data."
+The report is included as a pdf file.
