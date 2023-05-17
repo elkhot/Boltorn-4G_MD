@@ -1,0 +1,214 @@
+<ForceField>
+  <Info>
+    <DateGenerated>20220104</DateGenerated> #Mini forcefield for mPEG1. Simplified from Amber 14. Used GAFF atom types: OA 20220110
+     Aiming at doing dynamics for Boltorn based nanoparticles. First pentaerythritol core, residue name COR. EG units added as EGO. 
+     The bis(hydroxymethyl)propionate will be aadded as MNH with therminal OH groups.
+  </Info>
+  <AtomTypes>
+    <Type class="C3" element="C" mass="12.01" name="c3"/>
+    <Type class="C" element="C" mass="12.01" name="c"/>
+    <Type class="H" element="H" mass="1.008" name="hc"/>
+    <Type class="HO" element="H" mass="1.008" name="ho"/>
+    <Type class="OS" element="O" mass="16.0" name="os"/>
+    <Type class="OH" element="O" mass="16.0" name="oh"/>
+    <Type class="O" element="O" mass="16.0" name="o"/>
+  </AtomTypes>
+  <Residues>
+    <Residue name="COR">
+      <Atom charge="0.0" name="CQ" type="c3"/>
+      <Atom charge="0.0" name="CE" type="c3"/> 
+      <Atom charge="0.15" name="HE1" type="hc"/> 
+      <Atom charge="0.15" name="HE2" type="hc"/>
+      <Atom charge="0.0" name="CF" type="c3"/>
+      <Atom charge="0.15" name="HF1" type="hc"/> 
+      <Atom charge="0.15" name="HF2" type="hc"/>
+      <Atom charge="0.0" name="CC" type="c3"/>
+      <Atom charge="0.15" name="HC1" type="hc"/> 
+      <Atom charge="0.15" name="HC2" type="hc"/>
+      <Atom charge="0.0" name="CD" type="c3"/>
+      <Atom charge="0.15" name="HD1" type="hc"/> 
+      <Atom charge="0.15" name="HD2" type="hc"/>
+      <Atom charge="-0.3" name="OA" type="os"/>
+      <Atom charge="-0.3" name="OB" type="os"/>
+      <Atom charge="-0.3" name="OC" type="os"/>
+      <Atom charge="-0.3" name="OD" type="os"/>
+      <Bond atomName1="CQ" atomName2="CE"/>
+      <Bond atomName1="CQ" atomName2="CF"/>
+      <Bond atomName1="CQ" atomName2="CC"/>
+      <Bond atomName1="CQ" atomName2="CD"/>
+      <Bond atomName1="CE" atomName2="HE1"/>
+      <Bond atomName1="CE" atomName2="HE2"/>
+      <Bond atomName1="CE" atomName2="OA"/>
+      <Bond atomName1="CF" atomName2="HF1"/>
+      <Bond atomName1="CF" atomName2="HF2"/>
+      <Bond atomName1="CF" atomName2="OB"/>
+      <Bond atomName1="CC" atomName2="HC1"/>
+      <Bond atomName1="CC" atomName2="HC2"/>
+      <Bond atomName1="CC" atomName2="OC"/>
+      <Bond atomName1="CD" atomName2="HD1"/>
+      <Bond atomName1="CD" atomName2="HD2"/>
+      <Bond atomName1="CD" atomName2="OD"/>
+      <ExternalBond atomName="OA"/>
+      <ExternalBond atomName="OB"/>
+      <ExternalBond atomName="OC"/>
+      <ExternalBond atomName="OD"/>
+    </Residue>
+    <Residue name="EGO">
+      <Atom charge="0.0" name="CA" type="c3"/>
+      <Atom charge="0.12" name="HA1" type="hc"/> 
+      <Atom charge="0.12" name="HA2" type="hc"/>   
+      <Atom charge="0.0" name="CB" type="c3"/>
+      <Atom charge="0.13" name="HB1" type="hc"/> 
+      <Atom charge="0.13" name="HB2" type="hc"/> 
+      <Atom charge="-0.5" name="OH" type="oh"/> 
+    
+      <Bond atomName1="CA" atomName2="CB"/>
+      <Bond atomName1="CA" atomName2="HA1"/>
+      <Bond atomName1="CA" atomName2="HA2"/>
+      <Bond atomName1="CB" atomName2="OH"/>
+      <Bond atomName1="CB" atomName2="HB1"/>
+      <Bond atomName1="CB" atomName2="HB2"/>
+      <ExternalBond atomName="CA"/>
+      <ExternalBond atomName="OH"/>
+    </Residue> 
+    <Residue name="MNH">
+      <Atom charge="0.4" name="CA" type="c"/>
+      <Atom charge="-0.1" name="CQ" type="c3"/> 
+      <Atom charge="-0.1" name="CB" type="c3"/>
+      <Atom charge="0.12" name="HB1" type="hc"/> 
+      <Atom charge="0.12" name="HB2" type="hc"/>
+      <Atom charge="-0.1" name="CM" type="c3"/>
+      <Atom charge="0.12" name="HM1" type="hc"/> 
+      <Atom charge="0.12" name="HM2" type="hc"/>
+      <Atom charge="0.12" name="HM3" type="hc"/> 
+      <Atom charge="-0.1" name="CC" type="c3"/>
+      <Atom charge="0.12" name="HC1" type="hc"/> 
+      <Atom charge="0.12" name="HC2" type="hc"/>
+      <Atom charge="-0.54" name="OB" type="oh"/>  
+      <Atom charge="0.4" name="HOB" type="ho"/>
+      <Atom charge="-0.54" name="OC" type="oh"/>  
+      <Atom charge="0.4" name="HOC" type="ho"/>  
+      <Atom charge="-0.56" name="OX" type="o"/>
+      <Bond atomName1="CA" atomName2="CQ"/>
+      <Bond atomName1="CA" atomName2="OX"/>
+      <Bond atomName1="CQ" atomName2="CB"/>
+      <Bond atomName1="CQ" atomName2="CC"/>
+      <Bond atomName1="CQ" atomName2="CM"/>
+      <Bond atomName1="CB" atomName2="OB"/>
+      <Bond atomName1="CB" atomName2="HB1"/>
+      <Bond atomName1="CB" atomName2="HB2"/>
+      <Bond atomName1="CC" atomName2="OC"/>
+      <Bond atomName1="CC" atomName2="HC1"/>
+      <Bond atomName1="CC" atomName2="HC2"/>
+      <Bond atomName1="CM" atomName2="HM1"/>
+      <Bond atomName1="CM" atomName2="HM2"/>
+      <Bond atomName1="CM" atomName2="HM3"/>
+      <Bond atomName1="OB" atomName2="HOB"/>
+      <Bond atomName1="OC" atomName2="HOC"/>
+      <ExternalBond atomName="CA"/>
+    </Residue>
+    <Residue name="MNO">
+      <Atom charge="0.6" name="CA" type="c"/>
+      <Atom charge="0.0" name="CQ" type="c3"/> 
+      <Atom charge="0.0" name="CB" type="c3"/>
+      <Atom charge="0.13" name="HB1" type="hc"/> 
+      <Atom charge="0.13" name="HB2" type="hc"/>
+      <Atom charge="0.0" name="CM" type="c3"/>
+      <Atom charge="0.13" name="HM1" type="hc"/> 
+      <Atom charge="0.0.13" name="HM2" type="hc"/>
+      <Atom charge="0.0.13" name="HM3" type="hc"/> 
+      <Atom charge="0.0" name="CC" type="c3"/>
+      <Atom charge="0.13" name="HC1" type="hc"/> 
+      <Atom charge="0.13" name="HC2" type="hc"/>
+      <Atom charge="-0.49" name="OB" type="oh"/>  
+      <Atom charge="-0.49" name="OC" type="oh"/>    
+      <Atom charge="-0.53" name="OX" type="o"/>
+      <Bond atomName1="CA" atomName2="CQ"/>
+      <Bond atomName1="CA" atomName2="OX"/>
+      <Bond atomName1="CQ" atomName2="CB"/>
+      <Bond atomName1="CQ" atomName2="CC"/>
+      <Bond atomName1="CQ" atomName2="CM"/>
+      <Bond atomName1="CB" atomName2="OB"/>
+      <Bond atomName1="CB" atomName2="HB1"/>
+      <Bond atomName1="CB" atomName2="HB2"/>
+      <Bond atomName1="CC" atomName2="OC"/>
+      <Bond atomName1="CC" atomName2="HC1"/>
+      <Bond atomName1="CC" atomName2="HC2"/>
+      <Bond atomName1="CM" atomName2="HM1"/>
+      <Bond atomName1="CM" atomName2="HM2"/>
+      <Bond atomName1="CM" atomName2="HM3"/>
+      <ExternalBond atomName="CA"/>
+      <ExternalBond atomName="OB"/>
+      <ExternalBond atomName="OC"/>
+    </Residue>         
+  </Residues>
+
+
+<HarmonicBondForce>
+<Bond k="259407.99999999994" length="0.1525" type1="c3" type2="c3"/>
+<Bond k="259407.99999999994" length="0.1525" type1="c" type2="c3"/> #generic
+<Bond k="476975.9999999999" length="0.1229" type1="c" type2="o"/> #carbonyl, protein
+<Bond k="548940.7999999999" length="0.139" type1="c" type2="os"/> #ester, guess
+<Bond k="548940.7999999999" length="0.139" type1="c" type2="oh"/> #ester, guess
+<Bond k="476975.9999999999" length="0.141" type1="c3" type2="os"/>#ether, guess
+<Bond k="267775.9999999999" length="0.141" type1="c3" type2="oh"/>#alcohol, serin
+<Bond k="307105.5999999999" length="0.1080" type1="c3" type2="hc"/>
+<Bond k="462750.3999999999" length="0.096" type1="ho" type2="oh"/>
+</HarmonicBondForce>
+<HarmonicAngleForce>
+    <Angle angle="1.911135530933791" k="669.44" type1="c3" type2="c3" type3="c3"/> #generic
+    <Angle angle="1.911135530933791" k="669.44" type1="c3" type2="os" type3="c3"/> #generic
+    <Angle angle="1.911135530933791" k="669.44" type1="c3" type2="c3" type3="os"/> #Probable value
+    <Angle angle="1.911135530933791" k="585.76" type1="c3" type2="c3" type3="oh"/> #Probable value
+    <Angle angle="1.911135530933791" k="585.76" type1="oh" type2="c3" type3="c3"/> #Probable value
+    <Angle angle="1.911135530933791" k="292.88" type1="hc" type2="c3" type3="hc"/>  #Probable value 
+    <Angle angle="1.8936822384138476" k="460.24" type1="c3" type2="oh" type3="ho"/> #Probable value
+    <Angle angle="1.911135530933791" k="669.44" type1="hc" type2="c3" type3="os"/> #Probable value
+    <Angle angle="1.911135530933791" k="669.44" type1="hc" type2="c3" type3="c3"/> #Probable value
+    <Angle angle="1.911135530933791" k="418.40" type1="hc" type2="c3" type3="oh"/>  #Probable value
+    <Angle angle="1.911135530933791" k="418.40" type1="c" type2="oh" type3="c3"/>  #Probable value
+    <Angle angle="2.09439510" k="418.40" type1="o" type2="c" type3="oh"/>  #Probable value
+  </HarmonicAngleForce>
+  <PeriodicTorsionForce ordering="amber">
+    <Proper k1="15.167" periodicity1="2" phase1="0.0" type1="" type2="c3" type3="c3" type4=""/> #Originally pi
+    <Proper k1="11.7152" periodicity1="2" phase1="0.0" type1="" type2="c3" type3="os" type4=""/>#Originally pi
+    <Proper k1="11.7152" periodicity1="2" phase1="0.0" type1="" type2="c3" type3="os" type4="hc"/> #Originally pi
+    <Proper k1="11.7152" periodicity1="2" phase1="0.0" type1="hc" type2="c3" type3="c3" type4=""/>#Originally pi
+    <Proper k1="50.0" periodicity1="1" phase1="3.14159" type1="o" type2="c" type3="oh" type4="c3"/>#Making ester s-cis 11.715
+    <Proper k1="9.623199999999999" periodicity1="2" phase1="0.0" type1="" type2="c3" type3="oh" type4="oh"/>
+    <Improper k1="43.932" periodicity1="2" phase1="0.0" type1="c3" type2="" type3="" type4="os"/>
+    <Improper k1="4.6024" periodicity1="2" phase1="0.0" type1="protein-C" type2="c3" type3="c3" type4="oh"/>
+  </PeriodicTorsionForce>
+  <NonbondedForce coulomb14scale="0.8333333333333334" lj14scale="0.5">
+    <UseAttributeFromResidue name="charge"/>
+    <Atom epsilon="0.359824" sigma="0.3399669508423535" type="c3"/>
+    <Atom epsilon="0.086" sigma="0.3399669508423535" type="c"/>
+    <Atom epsilon="0.06568879999999999" sigma="0.10690784617684071" type="hc"/>
+    <Atom epsilon="0.0" sigma="1.0" type="ho"/>
+    <Atom epsilon="0.87864" sigma="0.2959921901149463" type="os"/>
+    <Atom epsilon="0.87864" sigma="0.2959921901149463" type="o"/>
+    <Atom epsilon="0.8803136" sigma="0.3066473387839048" type="oh"/>
+
+  </NonbondedForce>
+</ForceField>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
